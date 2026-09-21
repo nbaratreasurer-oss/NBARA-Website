@@ -136,6 +136,16 @@
 
   /* ---------- Section intros ---------- */
   section.group{ padding:0 0 8px 24px; border-left:2px solid var(--line); margin-bottom:34px; }
+  .resource-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px 20px;
+    align-items:stretch;
+  }
+  .resource-grid .resource{ margin-bottom:0; height:100%; }
+  @media (max-width:680px){
+    .resource-grid{ grid-template-columns:1fr; }
+  }
   .group-head{
     display:flex;
     align-items:baseline;
@@ -329,6 +339,8 @@
       </div>
       <p class="group-note">Local documents and forms for North Bay &amp; area officials.</p>
 
+      <div class="resource-grid">
+
       <div class="resource required">
         <div class="resource-body">
           <h3>Policies &amp; Procedures</h3>
@@ -387,6 +399,28 @@
             <a class="btn" href="https://www.horizonwebref.com/?pageID=login" target="_blank" rel="noopener">Log In</a>
           </div>
         </div>
+      </div>
+
+      <div class="resource">
+        <div class="resource-body">
+          <h3>Horizon Availability Resources</h3>
+          <p>Help article on understanding and updating your HorizonWebRef availability calendar.</p>
+          <div class="resource-meta">
+            <a class="btn" href="https://helpcenter.horizonwebref.com/en/articles/8212874-understanding-the-availability-calendar" target="_blank" rel="noopener">View Article</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="resource">
+        <div class="resource-body">
+          <h3>Horizon Help Center</h3>
+          <p>General guidance and help articles for using HorizonWebRef.</p>
+          <div class="resource-meta">
+            <a class="btn" href="https://helpcenter.horizonwebref.com/en/" target="_blank" rel="noopener">Visit Help Center</a>
+          </div>
+        </div>
+      </div>
+
       </div>
     </section>
 
